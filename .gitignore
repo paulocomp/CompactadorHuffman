@@ -1,0 +1,41 @@
+﻿# Compilação
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Cache do Visual Studio
+.vs/
+.vscode/
+
+# Arquivos de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de backup/temporários
+*.log
+*.tmp
+*.bak
+
+# Resultados de testes
+TestResults/
+*.coverage
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Desktop.ini
+
+# MANTER os arquivos da pasta Dados/
+# Para ignorá-los, descomentar:
+# Dados/*.txt
+# Dados/*.bin
+
+
+
+
+
