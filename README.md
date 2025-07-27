@@ -1,4 +1,4 @@
-﻿# Compressor Huffman com Princípios SOLID
+﻿# Compactador Huffman com Princípios SOLID
 
 O programa a seguir implementa o algoritmo de compressão de Huffman como parte da aplicação de conceitos aprendidos nas disciplinas de **Estruturas de Dados I e II** do curso de **Ciência da Computação da UERJ (Universidade Estadual do Rio de Janeiro)**.  
 O objetivo é **didático**, visando praticar conceitos de desenvolvimento orientado a objetos com ênfase na aplicação dos **princípios SOLID**.
@@ -26,18 +26,18 @@ Os princípios SOLID são um conjunto de boas práticas de design orientado a ob
 
 ---
 
-## Algoritmo de Compressão de Huffman
+## Algoritmo de Compactação de Huffman
 
-O **algoritmo de Huffman** é um método eficiente de compressão de dados baseado na frequência dos caracteres de entrada. Os passos principais são:
+O **algoritmo de Huffman** é um método eficiente de compactação de dados baseado na frequência dos caracteres de entrada. Os passos principais são:
 
 1. **Contar a frequência** de cada caractere no texto original.
 2. **Construir uma árvore binária** (Árvore de Huffman) onde os caracteres mais frequentes ficam mais próximos da raiz.
 3. **Atribuir códigos binários** a cada caractere com base no caminho até a folha correspondente (0 para esquerda, 1 para direita).
 4. **Codificar o texto** substituindo cada caractere por seu código binário.
-5. **Armazenar o dicionário de codificação junto ao arquivo compactado**, permitindo a posterior descompressão.
+5. **Armazenar o dicionário de codificação junto ao arquivo compactado**, permitindo a posterior descompactação.
 
 Esse processo reduz o tamanho do arquivo original, especialmente quando há muitos caracteres repetidos.
-Trata-se de um algoritmo simples, porém muito eficiente para compressão de dados textuais.
+Trata-se de um algoritmo simples, porém muito eficiente para compactação de dados textuais.
 
 ---
 
@@ -51,8 +51,8 @@ Para executar este programa na sua máquina, siga os passos abaixo:
 
 2. **Clone o repositório**:
 	```bash
-	git clone https://github.com/seu-usuario/CompressorHuffman.git
-	cd CompressorHuffman
+	git clone https://github.com/paulocomp/CompactadorHuffman.git
+	cd CompactadorHuffman
 	```
 3. **Compile e execute o programa**:
 	Se estiver usando o terminal, execute:
@@ -61,14 +61,13 @@ Para executar este programa na sua máquina, siga os passos abaixo:
 	dotnet run
 	```
 	Se estiver usando o Visual Studio:
-	- Abra a solução `CompressorHuffman.sln`
+	- Abra a solução `CompactadorHuffman.sln`
 	- Pressione `Ctrl + F5` para compilar e executar.
 
 4. **Verifique os arquivos de saída**
-	Os arquivos de entrada e saída estão localizados na pasta `Dados/`:
-	- `teste.txt`: arquivo de texto original.
-	- `saida.txt`: conteúdo compactado em formato texto.
-	- `saida.bin`: conteúdo compactado em binário.
-	- `descompactado.txt`: reconstrução do texto original a partir do arquivo binário.
-
-Este código foi desenvolvido com fins acadêmicos, e é uma ótima base para expandir o entendimento sobre compressão de dados, orientação a objetos e boas práticas de arquitetura de software.
+	Os arquivos de entrada e saída estão localizados na pasta `Teste/Entradas` e `Teste/Resultados` respectivamente:
+	- `smooth_operator.txt`: arquivo de texto para compactaçao e descompactação.
+	- `smooth_operator_compactado.txt`: conteúdo compactado em formato texto.
+	- `smooth_operator_descompactado.txt`: reconstrução do texto original a partir do arquivo binário.
+ 	- `lorem_ipsum.txt`: conteúdo para ser compactado em binário. 
+	- `lorem_ipsum_compactado.bin`: conteúdo compactado em binário.
